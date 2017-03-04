@@ -1,0 +1,21 @@
+{
+  "name": "phonegap-boilerplate",
+  "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "start": "phonegap serve",
+    "watch": "webpack --config webpack.config.js --watch",
+    "dev": "concurrently \"yarn start\" \"yarn watch\""
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-stage-0": "^6.22.0",
+    "concurrently": "^3.4.0",
+    "phonegap": "^6.4.5",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.15.3"
+  }
+}
