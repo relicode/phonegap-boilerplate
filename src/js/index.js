@@ -19,7 +19,7 @@
 
 import mainApplication from './app'
 
-let app = {
+const app = {
   // Application Constructor
   initialize: function() {
     this.bindEvents()
@@ -48,7 +48,7 @@ let app = {
     listeningElement.setAttribute('style', 'display:none;')
     receivedElement.setAttribute('style', 'display:block;')
 
-    console.log('Received Event: ' + id)
+    // console.log('Received Event: ' + id)
   }
 }
 

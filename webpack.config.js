@@ -1,28 +1,21 @@
-module.exports = {
-};
+const path = require('path')
 
-const path = require('path');
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: path.resolve(__dirname, './src/js/index.js'),
   output: {
     path: path.resolve(__dirname, 'www/js'),
     filename: 'app.js'
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['stage-0']
-        }
-      }
-    ],
     rules: [
-      {test: /\.(js|jsx)$/, use: 'babel-loader'}
+      {
+        test: /\.jsx?$/, use: 'babel-loader'
+      }
     ]
   }
-};
+}
 

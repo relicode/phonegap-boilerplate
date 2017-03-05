@@ -3,15 +3,18 @@
   "version": "0.0.1",
   "license": "BSD-3-Clause",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "dev": "concurrently \"yarn start\" \"yarn watch\"",
     "lint": "eslint ./src",
     "start": "phonegap serve",
     "watch": "webpack --config webpack.config.js --watch"
   },
   "devDependencies": {
+    "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.3.2",
+    "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
     "concurrently": "^3.4.0",
     "eslint": "^3.17.0",
@@ -21,6 +24,8 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
-    "axios": "^0.15.3"
+    "axios": "^0.15.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
