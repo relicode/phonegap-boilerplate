@@ -1,4 +1,4 @@
 export default function() {
-  console.log('alright');
+  console.log('alright')
 }
 

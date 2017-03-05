@@ -3,15 +3,20 @@
   "version": "0.0.1",
   "license": "BSD-3-Clause",
   "scripts": {
+    "dev": "concurrently \"yarn start\" \"yarn watch\"",
+    "lint": "eslint ./src",
     "start": "phonegap serve",
-    "watch": "webpack --config webpack.config.js --watch",
-    "dev": "concurrently \"yarn start\" \"yarn watch\""
+    "watch": "webpack --config webpack.config.js --watch"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.3.2",
     "babel-preset-stage-0": "^6.22.0",
     "concurrently": "^3.4.0",
+    "eslint": "^3.17.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.10.0",
     "phonegap": "^6.4.5",
     "webpack": "^2.2.1"
   },
