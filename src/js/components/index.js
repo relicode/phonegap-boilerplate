@@ -1,2 +1,7 @@
-export * from './hello-world'
+import MainApplication from './main-application'
+
+
+export {
+  MainApplication
+}
 
