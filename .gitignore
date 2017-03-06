@@ -37,7 +37,7 @@ jspm_packages
 .node_repl_history
 
 # PhoneGap ignores
-/.cordova
+/.cordova/config.json
 /platforms
 /plugins
 /www/js
