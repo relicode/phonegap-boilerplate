@@ -1,7 +1,14 @@
 {
   "name": "phonegap-boilerplate",
-  "version": "0.0.1",
+  "description": "Boilerplate for a PhoneGap project using ES6, React and Redux",
+  "author": {
+    "name": "Anssi Herranen",
+    "url": "https://github.com/relicode",
+    "email": "anssi@relicode.fi"
+  },
+  "version": "0.1.0",
   "license": "BSD-3-Clause",
+  "reposityory": "https://github.com/relicode/phonegap-boilerplate",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "build:android": "yarn build && phonegap remote build android",
