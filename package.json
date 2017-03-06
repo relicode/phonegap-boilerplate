@@ -4,6 +4,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "build:android": "yarn build && phonegap remote build android",
     "dev": "concurrently \"yarn start\" \"yarn watch\"",
     "lint": "eslint ./src",
     "start": "phonegap serve",
